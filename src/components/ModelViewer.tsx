@@ -1,20 +1,17 @@
 
 import { useRef, useState, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { OrbitControls, PerspectiveCamera, Environment, useGLTF, ContactShadows, Html } from '@react-three/drei';
+import { OrbitControls, PerspectiveCamera, Environment, ContactShadows, Html } from '@react-three/drei';
 import { Suspense } from 'react';
 import { Group, Vector3 } from 'three';
-import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 
-function Model({ path, scale = 1, position = [0, 0, 0], rotation = [0, 0, 0] }: { 
-  path: string; 
+function BasicModel({ scale = 1, position = [0, 0, 0], rotation = [0, 0, 0] }: { 
   scale?: number;
   position?: [number, number, number];
   rotation?: [number, number, number];
 }) {
   const group = useRef<Group>(null);
-  const { nodes, materials } = useGLTF(path);
   const [hovered, setHovered] = useState(false);
   
   // Animate model on hover
@@ -40,11 +37,22 @@ function Model({ path, scale = 1, position = [0, 0, 0], rotation = [0, 0, 0] }: 
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
     >
-      {/* This is a simplified structure as we can't know the exact structure of the user's models */}
-      {/* The real model will replace this cube */}
-      <mesh castShadow receiveShadow>
-        <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color={hovered ? "#888" : "#666"} metalness={0.8} roughness={0.2} />
+      {/* Simple laptop-like shape */}
+      <mesh castShadow receiveShadow position={[0, -0.1, 0]}>
+        <boxGeometry args={[1.5, 0.05, 1]} />
+        <meshStandardMaterial color={hovered ? "#7f7f7f" : "#5f5f5f"} metalness={0.8} roughness={0.2} />
+      </mesh>
+      <mesh castShadow receiveShadow position={[0, 0.35, -0.5]} rotation={[Math.PI / 3, 0, 0]}>
+        <boxGeometry args={[1.5, 0.05, 1]} />
+        <meshStandardMaterial color={hovered ? "#9f9f9f" : "#7f7f7f"} metalness={0.8} roughness={0.2} />
+      </mesh>
+      <mesh castShadow receiveShadow position={[0, 0, -0.05]}>
+        <boxGeometry args={[1.4, 0.02, 0.9]} />
+        <meshStandardMaterial color={hovered ? "#333" : "#222"} metalness={0.4} roughness={0.3} />
+      </mesh>
+      <mesh castShadow receiveShadow position={[0, 0.25, -0.5]} rotation={[Math.PI / 3, 0, 0]}>
+        <boxGeometry args={[1.4, 0.02, 0.9]} />
+        <meshStandardMaterial color="#0a84ff" metalness={0.2} roughness={0.3} emissive="#0a84ff" emissiveIntensity={0.2} />
       </mesh>
     </group>
   );
@@ -82,7 +90,6 @@ function Instructions() {
 }
 
 export default function ModelViewer({ 
-  modelPath = "/models/macbook.glb", 
   backgroundColor = "#f5f5f7",
   showInstructions = true,
   height = "70vh"
@@ -107,7 +114,7 @@ export default function ModelViewer({
               shadow-mapSize-width={1024} 
               shadow-mapSize-height={1024}
             />
-            <Model path={modelPath} />
+            <BasicModel />
             <ContactShadows
               rotation={[Math.PI / 2, 0, 0]}
               position={[0, -1.5, 0]}
@@ -137,6 +144,3 @@ function Loader() {
     </Html>
   );
 }
-
-// Preload the default model to avoid flickering
-useGLTF.preload('/models/macbook.glb');
