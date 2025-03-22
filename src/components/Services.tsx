@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
-import { Layers, PenTool, Shape, Cube, Camera, Globe } from 'lucide-react';
+import { Layers, PenTool, Box, Camera, Globe, Film } from 'lucide-react';
 
 const services = [
   {
@@ -11,7 +11,7 @@ const services = [
     description: "Beautiful, functional designs for all digital platforms including websites, apps, and marketing materials."
   },
   {
-    icon: <Cube size={24} />,
+    icon: <Box size={24} />,
     title: "3D Modeling",
     description: "High-quality 3D assets and models for product visualization, animations, and interactive experiences."
   },
@@ -26,7 +26,7 @@ const services = [
     description: "Strategic marketing solutions to help your brand stand out and connect with your target audience."
   },
   {
-    icon: <Shape size={24} />,
+    icon: <Film size={24} />,
     title: "Motion Design",
     description: "Eye-catching animations and motion graphics that bring your brand's story to life."
   },
@@ -108,3 +108,4 @@ export function Services() {
 }
 
 export default Services;
+
