@@ -51,21 +51,21 @@ export function Hero() {
           className="inline-block mb-4 px-4 py-1.5 rounded-full bg-gray-100 text-xs font-medium"
           variants={itemVariants}
         >
-          Marketing & Design Studio
+          Estudio de Diseño y Marketing
         </motion.div>
         
         <motion.h1 
           className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight"
           variants={itemVariants}
         >
-          We bring your <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600">digital products</span> to life
+          Transformamos tus <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600">ideas</span> en realidad
         </motion.h1>
         
         <motion.p 
           className="text-md md:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto"
           variants={itemVariants}
         >
-          Specializing in 2D and 3D design, marketing strategies, and photorealistic rendering. We create memorable digital experiences that elevate your brand.
+          Especialistas en diseño 2D y 3D, motion graphics, renders fotorrealistas y estrategias de marketing. Creamos experiencias digitales memorables que elevan tu marca.
         </motion.p>
         
         <motion.div 
@@ -73,10 +73,10 @@ export function Hero() {
           variants={itemVariants}
         >
           <Button className="rounded-full px-8 py-6 text-sm" size="lg">
-            View our work <ArrowRight className="ml-2 h-4 w-4" />
+            Ver nuestro trabajo <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
           <Button variant="outline" className="rounded-full px-8 py-6 text-sm" size="lg">
-            How we work
+            Cómo trabajamos
           </Button>
         </motion.div>
       </motion.div>
@@ -85,7 +85,7 @@ export function Hero() {
         href="#interactive-model" 
         className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-xs text-muted-foreground hover:text-foreground transition-colors"
       >
-        <span className="mb-2">Scroll to explore</span>
+        <span className="mb-2">Explora más</span>
         <ArrowDown className="h-4 w-4 animate-bounce" />
       </a>
     </section>

@@ -44,11 +44,11 @@ export function InteractiveShowcase() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full bg-gray-100 text-xs font-medium">
-            Interactive Experience
+            Experiencia Interactiva
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Explore Our 3D Capabilities</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Explora Nuestras Capacidades 3D</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Interact with our 3D models to see the detail and quality we bring to every project.
+            Interactúa con nuestros modelos 3D para ver el detalle y la calidad que aportamos a cada proyecto.
           </p>
         </motion.div>
 
@@ -58,9 +58,9 @@ export function InteractiveShowcase() {
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold mb-4">Interactive 3D Visualization</h3>
+            <h3 className="text-2xl font-semibold mb-4">Visualización 3D Interactiva</h3>
             <p className="text-muted-foreground mb-6">
-              At Arbus Studio, we specialize in creating interactive 3D models that allow your customers to engage with your products in a meaningful way. Our models are:
+              En Arbus Studio, nos especializamos en crear modelos 3D interactivos que permiten a tus clientes interactuar con tus productos de manera significativa. Nuestros modelos son:
             </p>
             
             <div className="space-y-4">
@@ -69,8 +69,8 @@ export function InteractiveShowcase() {
                   <MousePointer size={20} />
                 </div>
                 <div>
-                  <h4 className="font-medium">Fully Interactive</h4>
-                  <p className="text-sm text-muted-foreground">Rotate, zoom, and examine every detail with intuitive controls.</p>
+                  <h4 className="font-medium">Totalmente Interactivos</h4>
+                  <p className="text-sm text-muted-foreground">Rota, acerca y examina cada detalle con controles intuitivos.</p>
                 </div>
               </div>
               
@@ -79,8 +79,8 @@ export function InteractiveShowcase() {
                   <SearchIcon size={20} />
                 </div>
                 <div>
-                  <h4 className="font-medium">High-Resolution</h4>
-                  <p className="text-sm text-muted-foreground">Photorealistic textures and details that showcase your products accurately.</p>
+                  <h4 className="font-medium">Alta Resolución</h4>
+                  <p className="text-sm text-muted-foreground">Texturas y detalles fotorrealistas que muestran tus productos con precisión.</p>
                 </div>
               </div>
               
@@ -89,8 +89,8 @@ export function InteractiveShowcase() {
                   <Move size={20} />
                 </div>
                 <div>
-                  <h4 className="font-medium">Cross-Platform</h4>
-                  <p className="text-sm text-muted-foreground">Works seamlessly across desktop, mobile, and tablet devices.</p>
+                  <h4 className="font-medium">Multiplataforma</h4>
+                  <p className="text-sm text-muted-foreground">Funcionan perfectamente en dispositivos de escritorio, móviles y tablets.</p>
                 </div>
               </div>
             </div>

@@ -88,11 +88,11 @@ export function Navbar() {
 
 function NavLinks({ isMobile = false, onClick = () => {} }: { isMobile?: boolean; onClick?: () => void }) {
   const navItems = [
-    { label: 'Home', path: '/' },
-    { label: 'Services', path: '/services' },
+    { label: 'Inicio', path: '/' },
+    { label: 'Servicios', path: '/services' },
     { label: 'Portfolio', path: '/portfolio' },
-    { label: 'About', path: '/about' },
-    { label: 'Contact', path: '/contact' },
+    { label: 'Sobre Nosotros', path: '/about' },
+    { label: 'Contacto', path: '/contact' },
   ];
 
   return (
@@ -114,7 +114,7 @@ function NavLinks({ isMobile = false, onClick = () => {} }: { isMobile?: boolean
       ))}
       {!isMobile && (
         <Button className="ml-4 rounded-full px-6" size="sm">
-          Get in Touch
+          Contáctanos
         </Button>
       )}
     </>

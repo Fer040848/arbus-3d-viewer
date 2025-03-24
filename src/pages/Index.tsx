@@ -17,7 +17,7 @@ const Index = () => {
 
   useEffect(() => {
     // Set page title
-    document.title = 'Arbus Studio | Marketing & Design Agency';
+    document.title = 'Arbus Studio | Agencia de Marketing y Diseño';
     
     // Scroll to top on page load
     window.scrollTo(0, 0);

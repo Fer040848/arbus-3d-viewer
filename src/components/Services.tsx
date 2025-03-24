@@ -7,33 +7,33 @@ import { Layers, PenTool, Box, Camera, Globe, Film } from 'lucide-react';
 const services = [
   {
     icon: <PenTool size={24} />,
-    title: "2D Design",
-    description: "Beautiful, functional designs for all digital platforms including websites, apps, and marketing materials."
+    title: "Diseño 2D",
+    description: "Diseños funcionales y atractivos para todas las plataformas digitales, incluyendo sitios web, aplicaciones y materiales de marketing."
   },
   {
     icon: <Box size={24} />,
-    title: "3D Modeling",
-    description: "High-quality 3D assets and models for product visualization, animations, and interactive experiences."
+    title: "Modelado 3D",
+    description: "Modelos y assets 3D de alta calidad para visualización de productos, animaciones y experiencias interactivas."
   },
   {
     icon: <Camera size={24} />,
-    title: "Rendering",
-    description: "Photorealistic renders that showcase your products and spaces in stunning visual detail."
+    title: "Renders",
+    description: "Renders fotorrealistas que muestran tus productos y espacios con un detalle visual impresionante."
   },
   {
     icon: <Layers size={24} />,
     title: "Marketing",
-    description: "Strategic marketing solutions to help your brand stand out and connect with your target audience."
+    description: "Soluciones estratégicas de marketing para ayudar a tu marca a destacar y conectar con tu público objetivo."
   },
   {
     icon: <Film size={24} />,
-    title: "Motion Design",
-    description: "Eye-catching animations and motion graphics that bring your brand's story to life."
+    title: "Motion Graphics",
+    description: "Animaciones y gráficos en movimiento atractivos que dan vida a la historia de tu marca."
   },
   {
     icon: <Globe size={24} />,
-    title: "Web Development",
-    description: "Custom websites and web applications built with the latest technologies for optimal performance."
+    title: "Desarrollo Web",
+    description: "Sitios web y aplicaciones web personalizadas construidas con las últimas tecnologías para un rendimiento óptimo."
   }
 ];
 
@@ -74,11 +74,11 @@ export function Services() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full bg-gray-100 text-xs font-medium">
-            What We Do
+            Lo Que Hacemos
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestros Servicios</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            We provide comprehensive design and marketing solutions to help your brand thrive in the digital landscape.
+            Proporcionamos soluciones integrales de diseño y marketing para ayudar a tu marca a prosperar en el entorno digital.
           </p>
         </motion.div>
 
@@ -108,4 +108,3 @@ export function Services() {
 }
 
 export default Services;
-

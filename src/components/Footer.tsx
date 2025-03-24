@@ -17,53 +17,53 @@ export function Footer() {
               <span className="text-xl font-bold">Arbus Studio</span>
             </div>
             <p className="text-gray-400 mb-6 text-sm">
-              Creating exceptional design and marketing solutions for brands that want to stand out.
+              Creando soluciones excepcionales de diseño y marketing para marcas que quieren destacar.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/arbusstudio" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://twitter.com/arbusstudio" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter size={18} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/arbusstudio.agency/" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/arbusstudio/" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={18} />
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm mb-4 uppercase tracking-wider">Services</h3>
+            <h3 className="font-semibold text-sm mb-4 uppercase tracking-wider">Servicios</h3>
             <ul className="space-y-2">
-              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">2D Design</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">3D Modeling</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Rendering</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Diseño 2D</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Modelado 3D</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Renders</Link></li>
               <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Marketing</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Motion Design</Link></li>
+              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors text-sm">Motion Graphics</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm mb-4 uppercase tracking-wider">Company</h3>
+            <h3 className="font-semibold text-sm mb-4 uppercase tracking-wider">Empresa</h3>
             <ul className="space-y-2">
-              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors text-sm">About Us</Link></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors text-sm">Sobre Nosotros</Link></li>
               <li><Link to="/portfolio" className="text-gray-400 hover:text-white transition-colors text-sm">Portfolio</Link></li>
-              <li><Link to="/careers" className="text-gray-400 hover:text-white transition-colors text-sm">Careers</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contact</Link></li>
-              <li><Link to="/privacy" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</Link></li>
+              <li><Link to="/careers" className="text-gray-400 hover:text-white transition-colors text-sm">Carreras</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contacto</Link></li>
+              <li><Link to="/privacy" className="text-gray-400 hover:text-white transition-colors text-sm">Política de Privacidad</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm mb-4 uppercase tracking-wider">Subscribe</h3>
-            <p className="text-gray-400 mb-4 text-sm">Stay updated with our latest projects and insights.</p>
+            <h3 className="font-semibold text-sm mb-4 uppercase tracking-wider">Suscríbete</h3>
+            <p className="text-gray-400 mb-4 text-sm">Mantente actualizado con nuestros últimos proyectos y novedades.</p>
             <div className="flex">
               <Input 
                 type="email" 
-                placeholder="Your email" 
+                placeholder="Tu correo electrónico" 
                 className="rounded-l-md rounded-r-none bg-gray-800 border-gray-700 focus:ring-0 focus:border-blue-500 text-sm" 
               />
               <Button className="rounded-l-none" size="sm">
@@ -74,7 +74,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400 text-xs">
-          <p>&copy; {year} Arbus Studio. All rights reserved.</p>
+          <p>&copy; {year} Arbus Studio. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
