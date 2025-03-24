@@ -1,8 +1,9 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Layers, PenTool, Box, Camera, Globe, Film } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const services = [
   {
@@ -101,6 +102,17 @@ export function Services() {
               <p className="text-muted-foreground text-sm">{service.description}</p>
             </motion.div>
           ))}
+        </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="mt-12 text-center"
+        >
+          <Button asChild className="bg-blue-600 hover:bg-blue-700">
+            <Link to="/services">Ver todos los servicios</Link>
+          </Button>
         </motion.div>
       </div>
     </section>
