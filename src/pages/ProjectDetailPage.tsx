@@ -1,28 +1,17 @@
 
-import { useEffect } from 'react';
+import React from 'react';
 import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
-import Portfolio from '@/components/Portfolio';
-import InteractiveShowcase from '@/components/InteractiveShowcase';
+import ProjectDetail from '@/components/ProjectDetail';
 import Footer from '@/components/Footer';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
-const Index = () => {
+const ProjectDetailPage = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001
   });
-
-  useEffect(() => {
-    // Set page title
-    document.title = 'Arbus Studio | Agencia de Marketing y Diseño';
-    
-    // Scroll to top on page load
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <div className="min-h-screen relative">
@@ -34,10 +23,7 @@ const Index = () => {
       <Navbar />
       
       <main>
-        <Hero />
-        <Services />
-        <Portfolio />
-        <InteractiveShowcase />
+        <ProjectDetail />
       </main>
       
       <Footer />
@@ -45,4 +31,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default ProjectDetailPage;
